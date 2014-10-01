@@ -29,3 +29,4 @@ Create the cuda device drivers by running the startup script:
 
 Test the Theano installation by running:
 
+    sh test_theano.sh
