@@ -1,16 +1,7 @@
 #!/bin/bash
 
 # http://docs.nvidia.com/cuda/cuda-getting-started-guide-for-linux/index.html#runfile-verifications
-
-echo '------------'
-echo 'CUDA startup'
-echo '------------'
-
-echo 'nvidia-smi output:'
-nvidia-smi
-echo
-
-echo 'rest of startup output:'
+# http://stackoverflow.com/a/24665354/919431
 
 /sbin/modprobe nvidia 
 

@@ -11,7 +11,7 @@ Search for the [*Amazon Linux AMI with NVIDIA GRID GPU Driver*](https://aws.amaz
 
 SSH into the shell of the newly created instance, and install git via:
 
-    sudo yum install git
+    sudo yum -y install git
 
 Get the setup script by running:
 
@@ -20,4 +20,12 @@ Get the setup script by running:
 And run this script via:
 
     cd ./Theano_EC2/ && sudo sh setup.sh
+
+## Activate CUDA and test Theano ##
+
+Create the cuda device drivers by running the startup script:
+
+    sh cuda_startup.sh
+
+Test the Theano installation by running:
 
