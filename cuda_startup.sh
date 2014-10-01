@@ -3,6 +3,8 @@
 # http://docs.nvidia.com/cuda/cuda-getting-started-guide-for-linux/index.html#runfile-verifications
 # http://stackoverflow.com/a/24665354/919431
 
+sudo nvidia-smi
+
 /sbin/modprobe nvidia 
 
 if [ "$?" -eq 0 ]; then

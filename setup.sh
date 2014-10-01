@@ -28,35 +28,3 @@ sudo pip install scipy==0.10.1
 # install theano
 # http://deeplearning.net/software/theano/install_centos6.html
 sudo pip install Theano
-
-# Startup CUDA
-
-# http://docs.nvidia.com/cuda/cuda-getting-started-guide-for-linux/index.html#runfile-verifications
-# http://stackoverflow.com/a/24665354/919431
-echo '------------'
-echo 'CUDA startup'
-echo '------------'
-echo 'nvidia-smi output:'
-nvidia-smi
-echo
-echo 'rest of startup output:'
-echo 'sudo cuda_startup:'
-sudo sh cuda_startup.sh
-echo 'cuda_startup:'
-sh cuda_startup.sh
-
-# test the theano installation
-# http://deeplearning.net/software/theano/tutorial/using_gpu.html
-echo
-echo '------------------'
-echo 'Test Theano on CPU'
-echo '------------------'
-THEANO_FLAGS=mode=FAST_RUN,device=cpu,floatX=float32 python check1.py
-
-echo
-echo '------------------'
-echo 'Test Theano on GPU'
-echo '------------------'
-THEANO_FLAGS=mode=FAST_RUN,device=gpu,floatX=float32 python check1.py
-
-echo

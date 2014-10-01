@@ -20,3 +20,13 @@ Get the setup script by running:
 And run this script via:
 
     cd ./Theano_EC2/ && sudo sh setup.sh
+
+## Activate CUDA and test Theano ##
+
+Create the cuda device drivers by running the startup script:
+
+    sudo sh cuda_startup.sh
+
+Test the Theano installation by running:
+
+    sh test_theano.sh
