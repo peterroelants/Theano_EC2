@@ -19,21 +19,20 @@ sudo yum -y install \
 	python-devel \
 	python-nose \
 	python-setuptools \
-	numpy \
-	scipy \
-	python-matplotlib \
-	ipython \
 	python-nose \
 	python-pip
+
+sudo pip install numpy==1.6.1
+sudo pip install scipy==0.10.1
 
 # install theano
 # http://deeplearning.net/software/theano/install_centos6.html
 sudo pip install Theano
 
-# Startup the Nvidia CUDA application in root so that it becomes available
+# Startup the Nvidia CUDA application so that it becomes available
 # http://docs.nvidia.com/cuda/cuda-getting-started-guide-for-linux/index.html#runfile-verifications
 # http://stackoverflow.com/a/24665354/919431
-sudo sh cuda_startup.sh
+sh cuda_startup.sh
 
 # test the theano installation
 # http://deeplearning.net/software/theano/tutorial/using_gpu.html

@@ -19,5 +19,5 @@ Get the setup script by running:
 
 And run this script via:
 
-    sudo sh setup.sh
+    cd ./Theano_EC2/ && sudo sh setup.sh
 
