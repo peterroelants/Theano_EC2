@@ -22,8 +22,8 @@ sudo yum -y install \
 	python-nose \
 	python-pip
 
-sudo pip install numpy==1.6.1
-sudo pip install scipy==0.10.1
+sudo pip install numpy
+sudo pip install scipy
 
 # install theano
 # http://deeplearning.net/software/theano/install_centos6.html
